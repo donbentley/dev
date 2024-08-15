@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+}
+
+h1 {
+	color: #343a40;
+	text-align: left;
+}
+
+.cm-editor {
+	height: 500px;
+	border: 5px solid #ddd;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.cm-scroller {
+	overflow: auto;
+}

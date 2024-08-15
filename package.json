@@ -1,26 +1,31 @@
 {
-  "description": "Development environment for the CodeMirror 6 packages",
-  "scripts": {
-    "test": "node bin/cm.js test",
-    "test-node": "node bin/cm.js test --no-browser",
-    "prepare": "node bin/cm.js build",
-    "dev": "node bin/cm.js devserver"
-  },
-  "author": "Marijn Haverbeke <marijn@haverbeke.berlin>",
-  "license": "MIT",
-  "devDependencies": {
-    "@codemirror/buildhelper": "^1.0.0",
-    "esmoduleserve": "^0.2.0",
-    "serve-static": "^1.14.1",
-    "getdocs-ts": "^1.0.0",
-    "builddocs": "^1.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codemirror/dev.git"
-  },
-  "workspaces": [
-    "*"
-  ],
-  "private": true
+	"description": "Development environment for the CodeMirror 6 packages",
+	"scripts": {
+		"test": "node bin/cm.js test",
+		"test-node": "node bin/cm.js test --no-browser",
+		"prepare": "node bin/cm.js build",
+		"dev": "node bin/cm.js devserver"
+	},
+	"author": "Marijn Haverbeke <marijn@haverbeke.berlin>",
+	"license": "MIT",
+	"devDependencies": {
+		"@codemirror/buildhelper": "^1.0.0",
+		"builddocs": "^1.0.0",
+		"esmoduleserve": "^0.2.0",
+		"getdocs-ts": "^1.0.0",
+		"serve-static": "^1.14.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/codemirror/dev.git"
+	},
+	"workspaces": [
+		"*"
+	],
+	"private": true,
+	"dependencies": {
+		"@replit/codemirror-vim": "^6.2.1",
+		"bootstrap": "^5.3.3",
+		"codemirror": "^6.0.1"
+	}
 }
